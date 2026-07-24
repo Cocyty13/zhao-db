@@ -272,7 +272,27 @@ def main() -> None:
     parser.add_argument("source", type=Path)
     parser.add_argument("destination", type=Path)
     parser.add_argument("--summary", type=Path)
+    parser.add_argument(
+        "--force-import",
+        action="store_true",
+        help="allow replacing an existing SQLite database",
+    )
     args = parser.parse_args()
+
+    if args.destination.exists() and not args.force_import:
+        try:
+            connection = sqlite3.connect(args.destination)
+            canonical = connection.execute(
+                "SELECT value FROM _meta WHERE key = 'canonical_source'"
+            ).fetchone()
+            connection.close()
+        except sqlite3.Error:
+            canonical = None
+        if canonical and canonical[0] == "sqlite":
+            parser.error(
+                "refusing to replace the canonical SQLite database; "
+                "use --force-import only for an intentional legacy migration"
+            )
 
     result = build(args.source, args.destination)
     payload = json.dumps(result, ensure_ascii=False, indent=2)

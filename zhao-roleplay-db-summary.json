@@ -1,104 +1,89 @@
 {
-  "source": "zhao-roleplay-database.xlsx",
-  "destination": "zhao-roleplay.db",
-  "fts5_enabled": true,
+  "source": "zhao-roleplay.db",
+  "canonical_source": "sqlite",
   "integrity_check": "ok",
   "sheets": [
     {
       "sheet_name": "Characters",
       "table_name": "Characters",
-      "source_rows": 45,
       "data_rows": 44,
       "columns": 12
     },
     {
       "sheet_name": "Locations",
       "table_name": "Locations",
-      "source_rows": 12,
       "data_rows": 11,
       "columns": 7
     },
     {
       "sheet_name": "Scenes",
       "table_name": "Scenes",
-      "source_rows": 10,
       "data_rows": 9,
       "columns": 15
     },
     {
       "sheet_name": "Events",
       "table_name": "Events",
-      "source_rows": 18,
       "data_rows": 17,
       "columns": 9
     },
     {
       "sheet_name": "Relationships",
       "table_name": "Relationships",
-      "source_rows": 20,
       "data_rows": 19,
       "columns": 9
     },
     {
       "sheet_name": "Facts_Memory",
       "table_name": "Facts_Memory",
-      "source_rows": 42,
       "data_rows": 41,
       "columns": 9
     },
     {
       "sheet_name": "Plot_Threads",
       "table_name": "Plot_Threads",
-      "source_rows": 11,
       "data_rows": 10,
       "columns": 9
     },
     {
       "sheet_name": "Inventory",
       "table_name": "Inventory",
-      "source_rows": 3,
       "data_rows": 2,
       "columns": 8
     },
     {
       "sheet_name": "Location_Tracker",
       "table_name": "Location_Tracker",
-      "source_rows": 20,
       "data_rows": 19,
       "columns": 9
     },
     {
       "sheet_name": "Travel_Times",
       "table_name": "Travel_Times",
-      "source_rows": 9,
       "data_rows": 8,
       "columns": 6
     },
     {
       "sheet_name": "World_Rules",
       "table_name": "World_Rules",
-      "source_rows": 16,
       "data_rows": 15,
       "columns": 4
     },
     {
       "sheet_name": "Military_Scale",
       "table_name": "Military_Scale",
-      "source_rows": 7,
       "data_rows": 6,
       "columns": 4
     },
     {
       "sheet_name": "Naming_Kinship",
       "table_name": "Naming_Kinship",
-      "source_rows": 8,
       "data_rows": 7,
       "columns": 5
     },
     {
       "sheet_name": "Planned_Arcs",
       "table_name": "Planned_Arcs",
-      "source_rows": 8,
       "data_rows": 7,
       "columns": 6
     }
