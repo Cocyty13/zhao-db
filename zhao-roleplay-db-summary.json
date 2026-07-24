@@ -14,8 +14,8 @@
     {
       "sheet_name": "Locations",
       "table_name": "Locations",
-      "source_rows": 11,
-      "data_rows": 10,
+      "source_rows": 12,
+      "data_rows": 11,
       "columns": 7
     },
     {
@@ -35,15 +35,15 @@
     {
       "sheet_name": "Relationships",
       "table_name": "Relationships",
-      "source_rows": 19,
-      "data_rows": 18,
+      "source_rows": 20,
+      "data_rows": 19,
       "columns": 9
     },
     {
       "sheet_name": "Facts_Memory",
       "table_name": "Facts_Memory",
-      "source_rows": 41,
-      "data_rows": 40,
+      "source_rows": 42,
+      "data_rows": 41,
       "columns": 9
     },
     {
